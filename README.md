@@ -10,4 +10,4 @@ Credit to:
 - Vincent van Gogh for his serene, transcendent painting of the starry night over the Rhóne. (He's dead now.)
 
 
-eris6.github.io/admindashboard
+https://eris6.github.io/admindashboard
