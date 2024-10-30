@@ -17,8 +17,13 @@
 .header{
     display: grid;
     grid-column: 2/-1;
-    
+    box-shadow:
+    inset 0 -0.5em 0.5em rgb(0 0 0 / 20%),
+    0.3em 0.3em 1em rgb(0 0 0 / 60%);
+    padding-bottom: 15px;
 }
+
+    
 
 .sidebar{
     background-color: #1992d4;
@@ -72,9 +77,15 @@
 
 .main-content-header{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     color: black;
+}
 
+.hi-there{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 5px;
 }
 
 .top-header-row{
@@ -82,7 +93,9 @@
 }
 
 .bottom-header-row{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    align-items: center;
 }
 
 
@@ -100,11 +113,21 @@
     font-weight: 500;
 }
 
-
+.header-button{
+    background-color: #1992d4;
+    border-radius: 20px;
+    width: 5em;
+    height: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
 
 .home, .profile, .messages, .history, .tasks, .communities, .settings, .support, .privacy{
-    display: flex;   
+    display: flex;
+    margin-left: 15px;   
 }
 
 .home{
@@ -116,11 +139,46 @@
     margin-bottom: 50px;
 }
 
-.dashboard-button{
+.dashboard-button, .header-button{
     color: white;
     font-size: 20px;
     font-weight: 500;
 }
+
+.header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.top-header-row{
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr 1fr 3fr;
+    padding-top: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.search-rectangle{
+    height: 40px;
+    border-radius: 20px;
+    background-color: #e2e8f0;
+    margin-right: 30px;
+}
+
+.top-header-row > .profile-photo{
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.bottom-header-row > .profile-photo, .top-header-row > .magnifying-glass{
+    margin-left: 20px;
+}
+
 .white-image{
     filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(101deg) brightness(106%) contrast(104%);
 }
